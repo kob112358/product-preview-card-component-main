@@ -1,0 +1,116 @@
+body {
+  background-color: beige;
+}
+body > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  .desktop-card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 580px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .desktop__pic {
+    display: none;
+  }
+
+  .mobile__pic {
+    width: 100%;
+  }
+}
+
+@media (min-width: 376px) {
+  .desktop-card {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    width: 540px;
+    height: 405px;
+    background-color: white;
+  }
+  .desktop-card__picture {
+    height: 100%;
+  }
+  .desktop__pic {
+    height: 100%;
+    max-width: 270px;
+  }
+  .mobile__pic {
+    display: none;
+  }
+}
+
+.desktop-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5% 5% 2% 5%;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.4rem;
+}
+
+h2,
+div.price {
+  font-family: "Fraunces", serif;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+}
+
+.price {
+  color: rgb(72, 141, 72);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0 0 0 5%;
+}
+
+.price sup {
+  text-decoration: line-through;
+  color: black;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: .9rem;
+  margin: 0 0 0 10%;
+}
+
+.desktop-card__button {
+  padding: 5%;
+  margin: 5%;
+  background-color: rgb(72, 141, 72);
+  color: white;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.desktop-card__button:hover {
+  background-color: rgb(29, 82, 29);
+  cursor: pointer;
+}
+
+.desktop-card__border {
+  border-radius: 15px;
+  border: none;
+}
+
+
+
+
